@@ -24,7 +24,4 @@ In the project directory, you can run:
 ---
 
 <br>
-🎥 Demo Video
-<br>
-<br>
-<video src="demo/capacitor.mov" width="600" controls></video>
+![App Demo](demo/capacitor.png)
