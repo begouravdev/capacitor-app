@@ -17,3 +17,14 @@ In the project directory, you can run:
 ### `npx cap open ios`
 
 ### `npx cap open android`
+
+<br>
+<br>
+
+---
+
+<br>
+🎥 Demo Video
+<br>
+<br>
+<video src="demo/capacitor.mov" width="600" controls></video>
