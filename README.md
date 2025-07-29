@@ -20,8 +20,3 @@ In the project directory, you can run:
 
 <br>
 <br>
-
----
-
-<br>
-![App Demo](demo/capacitor.png)
