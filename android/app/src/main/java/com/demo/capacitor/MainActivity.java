@@ -1,4 +1,4 @@
-package com.demo.capacitor;
+package com.hirelinkmobile.dev;
 
 import com.getcapacitor.BridgeActivity;
 

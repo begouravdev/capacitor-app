@@ -2,7 +2,7 @@ import { Purchases } from '@revenuecat/purchases-capacitor'
 
 // Initialize RevenueCat
 export const setupRevenueCat = async () => {
-  await Purchases.configure({ apiKey: 'YOUR_REVENUECAT_PUBLIC_API_KEY' })
+  await Purchases.configure({ apiKey: 'appl_ejazMUxsGOyMJRQizeNpNNZxrAV' })
 }
 
 // Fetch available offerings

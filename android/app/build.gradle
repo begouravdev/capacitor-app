@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.demo.capacitor"
+    namespace "com.hirelinkmobile.dev"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.demo.capacitor"
+        applicationId "com.hirelinkmobile.dev"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
