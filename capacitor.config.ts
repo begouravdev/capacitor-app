@@ -4,10 +4,10 @@ const config: CapacitorConfig = {
   appId: 'com.hirelinkmobile.dev',
   appName: 'Capacitor App',
   webDir: 'build',
-  // server: {
-  //   url: 'https://2e8cf6b2-f2c8-484c-b0b1-5388c9e01530-00-e0j20g22q65b.pike.replit.dev',
-  //   cleartext: true,
-  // },
+  server: {
+    url: 'https://40e0d973-f5dc-45be-9629-3358fcab9d7a-00-1so40mrgf4zlt.sisko.replit.dev:3000/',
+    cleartext: true,
+  },
 }
 
 export default config
