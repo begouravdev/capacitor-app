@@ -1,31 +1,27 @@
-import { useEffect, useState } from 'react'
-import {
-  fetchOfferings,
-  purchasePackage,
-  setupRevenueCat,
-} from '../services/revenuecat'
+import { useEffect } from 'react'
+import { setupRevenueCat, purchasePackage } from '../services/revenuecat'
 
 export default function StorePage() {
-  const [packages, setPackages] = useState<any[]>([])
+  // 🔹 Hardcoded Product (Example)
+  const staticPackage = {
+    identifier: 'com.hirelinkmobile.dev.Lifetime',
+    product: {
+      title: 'Lifetime Access',
+      priceString: '$9.99',
+    },
+  }
 
   useEffect(() => {
-    ;(async () => {
-      await setupRevenueCat()
-      const pkgs = await fetchOfferings()
-      setPackages(pkgs)
-    })()
+    // ✅ Initialize RevenueCat once
+    setupRevenueCat()
   }, [])
 
   return (
     <div>
-      <h2>🔥 Subscription Plans</h2>
-      {packages.length === 0 && <p>No plans available</p>}
-
-      {packages.map((pkg, idx) => (
-        <button key={idx} onClick={() => purchasePackage(pkg)}>
-          {pkg.product.title} - {pkg.product.priceString}
-        </button>
-      ))}
+      <h2>🔥 Subscription Plan</h2>
+      <button onClick={() => purchasePackage(staticPackage)}>
+        {staticPackage.product.title} - {staticPackage.product.priceString}
+      </button>
     </div>
   )
 }
